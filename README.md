@@ -55,7 +55,7 @@ y
 - On hit: the opponent ship is destroyed
 - Game ends when one player has zero ships remaining
 
-## APIs (as per spec)
+## APIs 
 - `initGame(N)` — Initializes battlefield N x N, assigns halves to A/B
 - `addShip(id, size, xA, yA, xB, yB)` — Adds same ship id/size for both players at their respective centers
 - `startGame()` — Starts alternating turns (PlayerA first) using the current fire strategy
