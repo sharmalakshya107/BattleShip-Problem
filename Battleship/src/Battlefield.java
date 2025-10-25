@@ -46,16 +46,16 @@ public class Battlefield {
         this.grid = new Ship[n][n];
     }
 
-/**
- * Places a ship on the battlefield after performing comprehensive validation.
- * <p>
- * This method validates:
- * </p>
- * <ol>
- *   <li><b>Bounds checking:</b> All ship cells must be within [0, N-1] range</li>
- *   <li><b>Territory checking:</b> All ship cells must be within the owner's boundary</li>
- *   <li><b>Overlap checking:</b> No ship cell can overlap with an existing ship</li>
- * </ol>
+    /**
+     * Places a ship on the battlefield after performing comprehensive validation.
+     * <p>
+     * This method validates:
+     * </p>
+     * <ol>
+     *   <li><b>Bounds checking:</b> All ship cells must be within [0, N-1] range</li>
+     *   <li><b>Territory checking:</b> All ship cells must be within the owner's boundary</li>
+     *   <li><b>Overlap checking:</b> No ship cell can overlap with an existing ship</li>
+     * </ol>
      * 
      * <p><b>Important:</b> Ships can touch at edges but cannot overlap cells.</p>
      * 
