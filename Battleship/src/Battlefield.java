@@ -2,12 +2,12 @@
  * Represents the N x N battlefield grid where ships are placed and battles occur.
  * <p>
  * The battlefield is a square grid that:
+ * </p>
  * <ul>
  *   <li>Stores ship positions in a 2D array</li>
  *   <li>Validates ship placements (bounds, territory, overlap)</li>
  *   <li>Provides ship lookup by coordinate</li>
  * </ul>
- * </p>
  * 
  * <p><b>Grid Layout:</b></p>
  * <p>
@@ -46,16 +46,16 @@ public class Battlefield {
         this.grid = new Ship[n][n];
     }
 
-    /**
-     * Places a ship on the battlefield after performing comprehensive validation.
-     * <p>
-     * This method validates:
-     * <ol>
-     *   <li><b>Bounds checking:</b> All ship cells must be within [0, N-1] range</li>
-     *   <li><b>Territory checking:</b> All ship cells must be within the owner's boundary</li>
-     *   <li><b>Overlap checking:</b> No ship cell can overlap with an existing ship</li>
-     * </ol>
-     * </p>
+/**
+ * Places a ship on the battlefield after performing comprehensive validation.
+ * <p>
+ * This method validates:
+ * </p>
+ * <ol>
+ *   <li><b>Bounds checking:</b> All ship cells must be within [0, N-1] range</li>
+ *   <li><b>Territory checking:</b> All ship cells must be within the owner's boundary</li>
+ *   <li><b>Overlap checking:</b> No ship cell can overlap with an existing ship</li>
+ * </ol>
      * 
      * <p><b>Important:</b> Ships can touch at edges but cannot overlap cells.</p>
      * 

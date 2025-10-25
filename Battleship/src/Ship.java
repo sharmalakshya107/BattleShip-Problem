@@ -6,6 +6,7 @@ import java.util.Set;
  * <p>
  * Ships are stationary, square-shaped objects that occupy multiple cells on the grid.
  * Each ship has:
+ * </p>
  * <ul>
  *   <li>A unique identifier (id)</li>
  *   <li>An even size (width/height of the square)</li>
@@ -13,7 +14,6 @@ import java.util.Set;
  *   <li>An owner (Player A or Player B)</li>
  *   <li>A destroyed state (initially false, set to true when hit)</li>
  * </ul>
- * </p>
  * 
  * <p><b>Ship Placement:</b></p>
  * <p>

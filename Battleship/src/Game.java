@@ -8,6 +8,7 @@ import java.util.Scanner;
  * The main Game class that orchestrates the Battleship game.
  * <p>
  * This class manages:
+ * </p>
  * <ul>
  *   <li>Game initialization and configuration</li>
  *   <li>Player management and turn alternation</li>
@@ -16,7 +17,6 @@ import java.util.Scanner;
  *   <li>Win/loss conditions</li>
  *   <li>User interface (console I/O)</li>
  * </ul>
- * </p>
  * 
  * <p><b>Game Flow:</b></p>
  * <ol>
@@ -79,13 +79,13 @@ public class Game {
      * Initializes the game with an N x N battlefield.
      * <p>
      * This method:
+     * </p>
      * <ol>
      *   <li>Validates that N is positive and even</li>
      *   <li>Creates a new battlefield</li>
      *   <li>Initializes two players with their respective territories</li>
      *   <li>Resets game state (not game over, no fired coordinates)</li>
      * </ol>
-     * </p>
      * 
      * <p><b>Territory Assignment:</b></p>
      * <ul>
@@ -157,6 +157,7 @@ public class Game {
      * Starts the game and manages turn-based combat until one player wins.
      * <p>
      * Game loop:
+     * </p>
      * <ol>
      *   <li>Current player fires at opponent's territory using the fire strategy</li>
      *   <li>Check if shot hits a ship; if so, destroy it</li>
@@ -164,7 +165,6 @@ public class Game {
      *   <li>Check win condition (opponent has zero ships)</li>
      *   <li>Switch turns and repeat</li>
      * </ol>
-     * </p>
      * 
      * <p><b>Important:</b> Player A always goes first.</p>
      * 
@@ -231,11 +231,11 @@ public class Game {
      * Displays the current state of the battlefield in a grid format.
      * <p>
      * The grid shows:
+     * </p>
      * <ul>
      *   <li>Empty cells as blank spaces</li>
      *   <li>Occupied cells with ship identifiers (e.g., "A-SH1", "B-DESTROYER")</li>
      * </ul>
-     * </p>
      * 
      * <p><b>Display Format:</b></p>
      * <p>
@@ -272,13 +272,13 @@ public class Game {
      * Main entry point for the Battleship game.
      * <p>
      * This method:
+     * </p>
      * <ol>
      *   <li>Prompts user for battlefield size</li>
      *   <li>Prompts user to add ships with their positions</li>
      *   <li>Optionally displays the battlefield</li>
      *   <li>Starts the game</li>
      * </ol>
-     * </p>
      * 
      * <p><b>Interactive Prompts:</b></p>
      * <ul>

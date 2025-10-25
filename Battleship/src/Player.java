@@ -4,12 +4,12 @@ import java.util.*;
  * Represents a player in the Battleship game.
  * <p>
  * Each player manages:
+ * </p>
  * <ul>
  *   <li>A fleet of ships</li>
  *   <li>A designated territory (vertical half of the battlefield)</li>
  *   <li>A record of fired shots</li>
  * </ul>
- * </p>
  * 
  * <p><b>Territory Assignment:</b></p>
  * <ul>
